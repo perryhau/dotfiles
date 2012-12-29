@@ -1,0 +1,5 @@
+#!/bin/bash
+[[ -a "$HOME/.vimrc" ]] && mv -f $HOME/.vimrc{,.pre}
+[[ -a "$HOME/.ackrc" ]] && mv -f $HOME/.ackrc{,.pre}
+ln -s $HOME/Documents/vundle-vim/.vimrc $HOME/.vimrc
+ln -s $HOME/Documents/vundle-vim/.ackrc $HOME/.ackrc
