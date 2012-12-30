@@ -26,8 +26,20 @@ Bundle 'L9'
 " 新增的插件
 "ctrl+p 打开查询文件
 Bundle 'ctrlp.vim'
+"补全大中小括号，原来是 "aa"，按 cs"' 把双引号改为单引号，按 ds' 键把单引号去掉，按 ysiw[，会改为 [aa]。更多例子 http://git.io/surround.vim
+Bundle 'surround.vim'
+"文件内出现了 saberma，再次需要输入时输入 sab 按 tab 就可以补全了
+Bundle 'SuperTab'
+"最适合 rails 的补全（文件结构按目录划分，按快捷键命名补全内容的文件），在实体文件 中输入 hm 后按 tab，就会补全为 has_many。更多快捷键看这里 http://git.io/8ApXFg
+Bundle 'scrooloose/snipmate-snippets'
 Bundle 'scrooloose/nerdtree'
 silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
+"注释 leader + cc 注释，leader + cu 反注释
+"Bundle 'The-NERD-Commenter'
+" tComment
+Bundle "tComment"
+nnoremap // :TComment<CR>
+vnoremap // :TComment<CR>
 "按 leader + b 显示最近打开的文件
 Bundle 'bufexplorer.zip'
 nnoremap <leader>b :BufExplorer<cr>
@@ -35,10 +47,18 @@ nnoremap <leader>b :BufExplorer<cr>
 "不用安装 ack，但安装 ack-grep 后要进行链接，ln -s /usr/bin/ack-grep /usr/bin/ack
 "要注意 ack 默认是不搜索 haml,scss 等未识别文件的，要将它们加到 .ackrc
 Bundle 'ack.vim'
+" 按 leader + # 键就可以在所有子目录搜索
+noremap <LocalLeader># "ayiw:Ack <C-r>a<CR>
+vnoremap <LocalLeader># "ay:Ack <C-r>a<CR>
+Bundle 'endwise.vim'
 "编写 md 文件时，自动打开浏览器实时看效果（需要安装node.js） http://git.io/KUAglw
 Bundle 'instant-markdown.vim'
 "Bundle 'Haml'
 Bundle 'bbommarito/vim-slim'
+"coffee script 语法高亮
+Bundle 'vim-coffee-script'
+"语法检查，光标移到出错行，最底端会有错误详情
+Bundle 'Syntastic'
 
 " 热键绑定
 "直接按 Ctrl + h 等方向键切换窗口
