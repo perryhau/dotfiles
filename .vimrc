@@ -11,13 +11,14 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 " original repos on github
-"Bundle 'tpope/vim-fugitive' " git
+"a Git wrapper so awesome, it should be illegal
+Bundle 'tpope/vim-fugitive'
 "按两下 leader 键，再按w（或者b），可以快速跳转到任何位置；
 Bundle 'Lokaltog/vim-easymotion'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}   " write css, expand to html
 Bundle 'tpope/vim-rails.git'
 " vim-scripts repos
-Bundle 'L9'
+"Bundle 'L9' "FuzzyFinder 依赖
 "Bundle 'FuzzyFinder'
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
@@ -30,6 +31,8 @@ Bundle 'ctrlp.vim'
 Bundle 'surround.vim'
 "文件内出现了 saberma，再次需要输入时输入 sab 按 tab 就可以补全了
 Bundle 'SuperTab'
+"<a>，按 ds< 删除，需要重复这个动作时可以按 . 了
+Bundle 'repeat.vim'
 "最适合 rails 的补全（文件结构按目录划分，按快捷键命名补全内容的文件），在实体文件 中输入 hm 后按 tab，就会补全为 has_many。更多快捷键看这里 http://git.io/8ApXFg
 Bundle 'scrooloose/snipmate-snippets'
 Bundle 'scrooloose/nerdtree'
@@ -54,7 +57,7 @@ Bundle 'endwise.vim'
 "编写 md 文件时，自动打开浏览器实时看效果（需要安装node.js） http://git.io/KUAglw
 Bundle 'instant-markdown.vim'
 "Bundle 'Haml'
-Bundle 'bbommarito/vim-slim'
+Bundle 'slim-template/vim-slim'
 "coffee script 语法高亮
 Bundle 'vim-coffee-script'
 "语法检查，光标移到出错行，最底端会有错误详情
