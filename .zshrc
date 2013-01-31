@@ -45,6 +45,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 # 自定义
 export EDITOR=vim # make git rebase -i use vim as editor
 unalias zeus # just use zeus, not bundle exec zeus
+cd ~/Documents/19wu
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"

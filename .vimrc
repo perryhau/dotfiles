@@ -83,7 +83,9 @@ map <c-n> :sp<CR>
 " 其他配置
 set noswapfile " 不生成备份文件
 set number      "add line numbers
-
+set history=1000 "store lots of :cmdline history
+set incsearch   "find the next match as we type the search
+set hlsearch    "hilight searches by default
 
 filetype plugin indent on     " required!
 "
