@@ -1,5 +1,7 @@
 #!/bin/bash
 [[ -a "$HOME/.vimrc" ]] && mv -f $HOME/.vimrc{,.pre}
 [[ -a "$HOME/.ackrc" ]] && mv -f $HOME/.ackrc{,.pre}
-ln -s $HOME/Documents/vundle-vim/.vimrc $HOME/.vimrc
-ln -s $HOME/Documents/vundle-vim/.ackrc $HOME/.ackrc
+[[ -a "$HOME/.zshrc" ]] && mv -f $HOME/.zshrc{,.pre}
+ln -s $HOME/Documents/dotfiles/.vimrc $HOME/.vimrc
+ln -s $HOME/Documents/dotfiles/.ackrc $HOME/.ackrc
+ln -s $HOME/Documents/dotfiles/.zshrc $HOME/.zshrc

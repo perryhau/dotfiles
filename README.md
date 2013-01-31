@@ -1,4 +1,10 @@
-vundle-vim
+dotfiles
 ==========
 
-最适合 `Rails` 开发者的 `vim` 配置，基于 `vundle`
+config files for zsh, vim
+
+## Installation
+
+    git clone git://github.com/saberma/dotfiles ~/Documents/dotfiles
+    cd ~/Documents/dotfiles
+    ./setup
