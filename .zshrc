@@ -47,5 +47,9 @@ export EDITOR=vim # make git rebase -i use vim as editor
 unalias zeus # just use zeus, not bundle exec zeus
 cd ~/Documents/19wu
 
+### tmuxinator
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+alias guard='nocorrect guard'
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"

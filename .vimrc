@@ -75,8 +75,8 @@ map <c-a> :wa<CR>
 "Ctrl + c 退出窗口
 imap <c-c> <esc>:q<CR>
 map <c-c> :q<CR>
-"Ctrl + s 打开vs新窗口
-map <c-s> :vs<CR>
+"Ctrl + m 打开vs新窗口
+map <c-m> :vs<CR>
 "Ctrl + n 打开sp新窗口
 map <c-n> :sp<CR>
 
