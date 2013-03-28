@@ -4,15 +4,14 @@
 project_name: 19wu
 project_root: ~/Documents/19wu
 socket_name: 19wu # Not needed.  Remove to use default socket
-rvm: ruby-1.9.3-p327
+rvm: ruby-2.0.0-p0
 #pre: sudo /etc/rc.d/mysqld start
 tabs:
   - all:
-      layout: main-vertical
-      #layout: even-horizontal
+      #layout: main-vertical
+      layout: even-horizontal
       panes:
         #- #empty, will just run plain bash
-        - tail -f logs/development.log
         - zs
         - guard -i
   #- shell: git pull

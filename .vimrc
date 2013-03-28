@@ -55,7 +55,7 @@ noremap <LocalLeader># "ayiw:Ack <C-r>a<CR>
 vnoremap <LocalLeader># "ay:Ack <C-r>a<CR>
 Bundle 'endwise.vim'
 "编写 md 文件时，自动打开浏览器实时看效果（需要安装node.js） http://git.io/KUAglw
-Bundle 'instant-markdown.vim'
+"Bundle 'suan/vim-instant-markdown'
 "Bundle 'Haml'
 Bundle 'slim-template/vim-slim'
 "coffee script 语法高亮
@@ -75,8 +75,8 @@ map <c-a> :wa<CR>
 "Ctrl + c 退出窗口
 imap <c-c> <esc>:q<CR>
 map <c-c> :q<CR>
-"Ctrl + m 打开vs新窗口
-map <c-m> :vs<CR>
+"Ctrl + m 打开vs新窗口(与 ack.vim 冲突，无法打开文件)
+"map <c-m> :vs<CR>
 "Ctrl + n 打开sp新窗口
 map <c-n> :sp<CR>
 
@@ -87,8 +87,15 @@ set history=1000 "store lots of :cmdline history
 set incsearch   "find the next match as we type the search
 set hlsearch    "hilight searches by default
 
+" indent " http://www.cs.swarthmore.edu/help/vim/indenting.html
+set expandtab     " don't use actual tab character (ctrl-v)
+set shiftwidth=2  " indenting is 4 spaces 
+set softtabstop=2 
+set autoindent    " turns it on
+set smartindent   " does the right thing (mostly) in programs
+
 filetype plugin indent on     " required!
-"
+
 " Brief help
 " :BundleList          - list configured bundles
 " :BundleInstall(!)    - install(update) bundles

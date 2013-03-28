@@ -45,7 +45,7 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 # 自定义
 export EDITOR=vim # make git rebase -i use vim as editor
 unalias zeus # just use zeus, not bundle exec zeus
-cd ~/Documents/19wu
+test "$PWD" = "$HOME" && cd ~/Documents/19wu
 
 ### tmuxinator
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
@@ -53,3 +53,6 @@ alias guard='nocorrect guard'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+### Capistrano
+[[ -s $HOME/.zshrc_variable ]] && source $HOME/.zshrc_variable
