@@ -44,7 +44,6 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # 自定义
 export EDITOR=vim # make git rebase -i use vim as editor
-unalias zeus # just use zeus, not bundle exec zeus
 test "$PWD" = "$HOME" && cd ~/Documents/19wu
 
 ### tmuxinator
