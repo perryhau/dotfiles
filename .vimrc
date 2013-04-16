@@ -89,8 +89,8 @@ set hlsearch    "hilight searches by default
 
 " indent " http://www.cs.swarthmore.edu/help/vim/indenting.html
 set expandtab     " don't use actual tab character (ctrl-v)
-set shiftwidth=2  " indenting is 4 spaces 
-set softtabstop=2 
+set shiftwidth=2  " indenting is 4 spaces
+set softtabstop=2
 set autoindent    " turns it on
 set smartindent   " does the right thing (mostly) in programs
 
