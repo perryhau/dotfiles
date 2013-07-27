@@ -1,5 +1,6 @@
 #!/bin/bash
-for i in .vimrc .zshrc .tmux.conf .ackrc .tmuxinator/19wu.yml; do
+#for i in .vimrc .zshrc .tmux.conf .ackrc .tmuxinator/19wu.yml; do
+for i in .vimrc .tmux.conf .ackrc .tmuxinator/19wu.yml; do
   # exist file but is not a link, then move.
   [[ -e "$HOME/$i" ]] && [[ ! -L "$HOME/$i" ]] && mv -f $HOME/$i{,.pre}
   [[ ! -e "$HOME/$i" ]] && ln -s $PWD/$i $HOME/$i

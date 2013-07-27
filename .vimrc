@@ -87,6 +87,14 @@ set history=1000 "store lots of :cmdline history
 set incsearch   "find the next match as we type the search
 set hlsearch    "hilight searches by default
 
+" Mac
+" https://github.com/altercation/vim-colors-solarized
+syntax enable
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
+" iTerm2: [Perferences] - [Profiles] - [Terminal] - [Report Terminal Type] = [xterm-256]
+
 " indent " http://www.cs.swarthmore.edu/help/vim/indenting.html
 set expandtab     " don't use actual tab character (ctrl-v)
 set shiftwidth=2  " indenting is 4 spaces
