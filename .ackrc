@@ -6,3 +6,5 @@ css=.sass,.scss
 js=.coffee
 --type-add
 js=.hamljs
+
+--ignore-dir=spec/tmp/
